@@ -1,7 +1,6 @@
 Riverpod2.0で推奨されている複雑な操作をするときに使用するNotifierを使用して、Firestoreを操作する.
   
-  ```dart
-  import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:counter/model/item_class.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -43,4 +42,3 @@ class Crud extends Notifier<List<Item>> {
     await collection.doc(id).delete();
   }
 }
-  ```
